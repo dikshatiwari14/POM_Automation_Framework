@@ -5,7 +5,6 @@ import java.util.Hashtable;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.nagarro.seleniumAssignment.Base.Base;
 import com.nagarro.seleniumAssignment.Pages.AddToCartPage;
 import com.nagarro.seleniumAssignment.Pages.CartPage;
@@ -15,7 +14,7 @@ import com.nagarro.seleniumAssignment.Pages.SearchResultsPage;
 import com.nagarro.seleniumAssignment.Utilities.DataUtil;
 
 public class ProductAddToCartTest extends Base {
-
+	
 	@Test(dataProvider = "getData", groups = { "Regression", "Sanity" })
 	public void verifyProductSelection(Hashtable<String, String> data)
 			throws Exception {
