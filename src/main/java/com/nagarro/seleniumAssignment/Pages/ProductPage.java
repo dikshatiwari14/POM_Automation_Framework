@@ -3,9 +3,10 @@ package com.nagarro.seleniumAssignment.Pages;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import com.aventstack.extentreports.Status;
 import com.nagarro.seleniumAssignment.Base.Base;
 import com.nagarro.seleniumAssignment.Common.CommonFunctions;
@@ -13,8 +14,8 @@ import com.nagarro.seleniumAssignment.Utilities.AmazonConstants;
 
 public class ProductPage extends Base{
 	
-	public ProductPage(WebDriver driver){
-		super(driver);
+	public ProductPage(){
+		PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath = AmazonConstants.PRODUCT_TITLE)

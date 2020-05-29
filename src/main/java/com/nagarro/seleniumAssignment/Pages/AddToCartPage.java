@@ -1,9 +1,8 @@
 package com.nagarro.seleniumAssignment.Pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.Status;
 import com.nagarro.seleniumAssignment.Base.Base;
 import com.nagarro.seleniumAssignment.Common.CommonFunctions;
@@ -11,8 +10,8 @@ import com.nagarro.seleniumAssignment.Utilities.AmazonConstants;
 
 public class AddToCartPage extends Base {
 
-	public AddToCartPage(WebDriver driver) {
-		super(driver);
+	public AddToCartPage() {
+		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(xpath = AmazonConstants.ADD_TO_CART_MAIN)

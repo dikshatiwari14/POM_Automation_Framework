@@ -20,9 +20,9 @@ public class ProductAddToCartTest extends Base {
 	public void verifyProductSelection(Hashtable<String, String> data)
 			throws Exception {
 
-		HeaderPage headerPage = new HeaderPage(driver);
-		SearchResultsPage searchResultsPage = new SearchResultsPage(driver);
-		ProductPage productPage = new ProductPage(driver);
+		HeaderPage headerPage = new HeaderPage();
+		SearchResultsPage searchResultsPage = new SearchResultsPage();
+		ProductPage productPage = new ProductPage();
 
 		try {
 			// Selecting the category and entering the search keyword from Data excel
@@ -51,7 +51,7 @@ public class ProductAddToCartTest extends Base {
 
 	@Test(dependsOnMethods = { "verifyProductSelection" }, groups = { "Regression" })
 	public void verifyProductAddedInCartConfirmationMessage() throws Exception {
-		AddToCartPage addToCart = new AddToCartPage(driver);
+		AddToCartPage addToCart = new AddToCartPage();
 		try {
 			// Adding the product to cart
 			addToCart.addProductToCart();
@@ -72,8 +72,8 @@ public class ProductAddToCartTest extends Base {
 	@Test(dependsOnMethods = { "verifyProductAddedInCartConfirmationMessage" }, groups = { "Regression" })
 	public void verifyTheProductInCart() throws Exception {
 
-		HeaderPage headerPage = new HeaderPage(driver);
-		CartPage cartPage = new CartPage(driver);
+		HeaderPage headerPage = new HeaderPage();
+		CartPage cartPage = new CartPage();
 		try {
 			// Navigating to cart page from main header
 			headerPage.goToCartPage();

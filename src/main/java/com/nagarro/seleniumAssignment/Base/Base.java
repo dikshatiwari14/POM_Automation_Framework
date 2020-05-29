@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.nagarro.seleniumAssignment.Utilities.ConfigReader;
@@ -23,18 +23,8 @@ public class Base {
 	public ExcelReader xls = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\Data.xlsx");
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExtentTest  test;
-	
-	public Base() {
 
-	}
-
-	public Base(WebDriver driver) {
-
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
-
-	public void browserSetup() {
+	public WebDriver browserSetup() {
 		String browser = PropertiesFileReader.getProperty("browser");
 		System.out.println("Browser Name is :" + browser);
 
@@ -69,6 +59,7 @@ public class Base {
 		driver.manage().timeouts()
 				.implicitlyWait(ImplicitWait, TimeUnit.SECONDS);
 		System.out.println(ImplicitWait);
+		return driver;
 	}
 
 	public void navigateToUrl() {
