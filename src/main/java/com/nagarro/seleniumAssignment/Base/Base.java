@@ -17,7 +17,7 @@ import com.nagarro.seleniumAssignment.Utilities.ExcelReader;
 
 public class Base {
 
-	static ConfigReader PropertiesFileReader = new ConfigReader();
+	public static ConfigReader PropertiesFileReader = new ConfigReader();
 	public static WebDriver driver;
 	public ExcelReader xls = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\Data.xlsx");
 	public static Logger log = Logger.getLogger("devpinoyLogger");

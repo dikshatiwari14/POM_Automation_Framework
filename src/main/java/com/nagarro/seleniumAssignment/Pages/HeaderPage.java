@@ -4,14 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.nagarro.seleniumAssignment.Base.Base;
 import com.nagarro.seleniumAssignment.Common.CommonFunctions;
 import com.nagarro.seleniumAssignment.Utilities.AmazonConstants;
 
 public class HeaderPage extends Base{
 	
-	public HeaderPage(WebDriver driver){
+	ExtentTest test;
+	
+	public HeaderPage(WebDriver driver, ExtentTest test){
 		super(driver);
+		this.test = test;
 	}
 		
 	@FindBy(xpath = AmazonConstants.CATEGORY_DROPDOWN)
@@ -31,8 +36,9 @@ public class HeaderPage extends Base{
 	//method to select any product category in search field
 	public void searchProduct(String category, String searchText){
 				
+		test.log(Status.INFO, " *** Clicking on search category dropdown and selecing one category.*** ");
+		log.info(" ***Clicking on search category dropdown and selecing one category.*** ");
 		common.selectDropdown(SearchCategoryDropdown, category);
-		log.info("Clicking on search category dropdown and selecing one category.");
 		
 		SearchTextField.sendKeys(searchText);
 		log.info("Entering the search keyword.");
@@ -48,7 +54,5 @@ public class HeaderPage extends Base{
 		log.info("Clicking on Cart button on main header.");
 
 	}
-	
-
-	
+		
 }

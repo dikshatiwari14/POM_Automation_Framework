@@ -13,12 +13,13 @@ import com.nagarro.seleniumAssignment.Pages.HeaderPage;
 import com.nagarro.seleniumAssignment.Pages.ProductPage;
 import com.nagarro.seleniumAssignment.Pages.SearchResultsPage;
 import com.nagarro.seleniumAssignment.Utilities.DataUtil;
+import com.nagarro.seleniumAssignment.Utilities.TestListener;
 
 public class ProductAddToCartTest extends Base {
 
 	@Test(dataProvider="getData", groups = {"Regression", "Sanity"})
 	public void verifyProductSelection(Hashtable<String,String> data) {
-		HeaderPage headerPage = new HeaderPage(driver);
+		HeaderPage headerPage = new HeaderPage(driver, TestListener.test);
 		SearchResultsPage searchResultsPage = new SearchResultsPage(driver);
 		ProductPage productPage = new ProductPage(driver);
 		headerPage.searchProduct(data.get("Product_Category"),data.get("Search_Text"));
@@ -52,7 +53,7 @@ public class ProductAddToCartTest extends Base {
 	@Test(dependsOnMethods = { "verifyProductAddedInCartConfirmationMessage" }, groups = {"Regression"})
 	public void verifyTheProductInCart() {
 
-		HeaderPage headerPage = new HeaderPage(driver);
+		HeaderPage headerPage = new HeaderPage(driver, TestListener.test);
 		CartPage cartPage = new CartPage(driver);
 
 		headerPage.goToCartPage();

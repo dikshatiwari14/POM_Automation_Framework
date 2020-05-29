@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.nagarro.seleniumAssignment.Base.Base;
 
 public class ExtentManager {
     private static ExtentReports extent;
@@ -37,7 +38,9 @@ public class ExtentManager {
         extent.attachReporter(htmlReporter);
         //Set environment details
 		extent.setSystemInfo("OS", "Windows");
-		extent.setSystemInfo("AUT", "QA");
+		extent.setSystemInfo("Environment", "Test");
+		extent.setSystemInfo("User Name", "Diksha Tiwari");
+		extent.setSystemInfo("Browser", Base.PropertiesFileReader.getProperty("browser"));
  
         return extent;
     }

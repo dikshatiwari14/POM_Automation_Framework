@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 public class ScreenshotCaptureUtil {
 	
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException {
-		String dateName = new SimpleDateFormat("yyyyMMddhhhmmss").format(new Date());
+		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		
