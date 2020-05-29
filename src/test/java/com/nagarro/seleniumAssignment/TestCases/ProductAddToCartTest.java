@@ -62,7 +62,6 @@ public class ProductAddToCartTest extends Base {
 			Assert.assertTrue(isConfirmationAppears,
 					"AddedToCartConfirmationNotAppeared");
 		}
-
 		catch (Exception e) {
 			throw e;
 		}
