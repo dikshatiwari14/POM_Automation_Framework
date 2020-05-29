@@ -7,18 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.nagarro.seleniumAssignment.Base.Base;
 import com.nagarro.seleniumAssignment.Utilities.AmazonConstants;
 
 public class CartPage extends Base {
 
-	ExtentTest test;
-	
-	public CartPage(WebDriver driver, ExtentTest test){
+	public CartPage(WebDriver driver){
 		super(driver);
-		this.test = test;
 	}
 	
 	@FindBy(xpath = AmazonConstants.Cart_ProductLink)

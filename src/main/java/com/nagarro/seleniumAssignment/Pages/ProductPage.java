@@ -6,8 +6,6 @@ import java.util.Set;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.nagarro.seleniumAssignment.Base.Base;
 import com.nagarro.seleniumAssignment.Common.CommonFunctions;
@@ -15,11 +13,8 @@ import com.nagarro.seleniumAssignment.Utilities.AmazonConstants;
 
 public class ProductPage extends Base{
 	
-	ExtentTest test;
-
-	public ProductPage(WebDriver driver, ExtentTest test){
+	public ProductPage(WebDriver driver){
 		super(driver);
-		this.test = test;
 	}
 	
 	@FindBy(xpath = AmazonConstants.PRODUCT_TITLE)

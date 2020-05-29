@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
+
+import com.aventstack.extentreports.ExtentTest;
 import com.nagarro.seleniumAssignment.Utilities.ConfigReader;
 import com.nagarro.seleniumAssignment.Utilities.ExcelReader;
 
@@ -20,7 +22,8 @@ public class Base {
 	public static WebDriver driver;
 	public ExcelReader xls = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\Data.xlsx");
 	public static Logger log = Logger.getLogger("devpinoyLogger");
-
+	public static ExtentTest  test;
+	
 	public Base() {
 
 	}

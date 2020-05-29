@@ -5,20 +5,15 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.nagarro.seleniumAssignment.Base.Base;
 import com.nagarro.seleniumAssignment.Common.CommonFunctions;
 import com.nagarro.seleniumAssignment.Utilities.AmazonConstants;
 
 public class SearchResultsPage extends Base {
-	
-	ExtentTest test;
 
-	public SearchResultsPage(WebDriver driver, ExtentTest test){
+	public SearchResultsPage(WebDriver driver){
 		super(driver);
-		this.test = test;
 	}
 	// Declaring variable to store the product title before clicking on it
     public static String firstProductTitle;
