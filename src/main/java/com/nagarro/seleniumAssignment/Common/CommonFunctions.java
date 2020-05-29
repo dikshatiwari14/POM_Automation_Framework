@@ -2,7 +2,6 @@ package com.nagarro.seleniumAssignment.Common;
 
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -13,9 +12,6 @@ import com.nagarro.seleniumAssignment.Base.Base;
 
 public class CommonFunctions extends Base {
 	
-	public CommonFunctions(WebDriver driver){
-		super(driver);
-	}
 		
 	public void verifyText(WebElement ele1, String expText){
 		String actText=ele1.getText();

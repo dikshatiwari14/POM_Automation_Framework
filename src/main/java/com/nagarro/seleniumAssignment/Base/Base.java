@@ -11,7 +11,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
-
 import com.nagarro.seleniumAssignment.Utilities.ConfigReader;
 import com.nagarro.seleniumAssignment.Utilities.ExcelReader;
 

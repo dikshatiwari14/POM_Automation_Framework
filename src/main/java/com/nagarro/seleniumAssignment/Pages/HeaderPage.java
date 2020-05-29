@@ -3,7 +3,6 @@ package com.nagarro.seleniumAssignment.Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.nagarro.seleniumAssignment.Base.Base;
@@ -11,7 +10,7 @@ import com.nagarro.seleniumAssignment.Common.CommonFunctions;
 import com.nagarro.seleniumAssignment.Utilities.AmazonConstants;
 
 public class HeaderPage extends Base{
-	
+
 	ExtentTest test;
 	
 	public HeaderPage(WebDriver driver, ExtentTest test){
@@ -31,28 +30,32 @@ public class HeaderPage extends Base{
 	@FindBy(xpath = AmazonConstants.CART_LINK)
 	WebElement CartLink;
     
-	CommonFunctions common = new CommonFunctions(driver);
+	CommonFunctions common = new CommonFunctions();
 	
-	//method to select any product category in search field
+	//method to select any product category and product search keyword in search field
 	public void searchProduct(String category, String searchText){
 				
-		test.log(Status.INFO, " *** Clicking on search category dropdown and selecing one category.*** ");
-		log.info(" ***Clicking on search category dropdown and selecing one category.*** ");
+		test.log(Status.INFO, " *** Clicking on search category dropdown and selecting one category.*** ");
+		log.info(" *** Clicking on search category dropdown and selecting one category.***  ");
 		common.selectDropdown(SearchCategoryDropdown, category);
 		
+		test.log(Status.INFO, " *** Entering the search keyword.*** ");
+		log.info(" *** Entering the search keyword.*** ");
 		SearchTextField.sendKeys(searchText);
-		log.info("Entering the search keyword.");
 		
+		test.log(Status.INFO, " *** Clicking on search button to perform search.*** ");
+		log.info(" *** Clicking on search button to perform search.*** ");
 		GoButton.click();
-		log.info("Clicking on search button to perform search.");
+		
 	}
 	
-	// method to navigate to cart page
+	// method to navigate to cart page from header
 	public void goToCartPage(){
 		
+		test.log(Status.INFO, " *** Clicking on Cart button on main header. *** ");
+		log.info(" *** Clicking on Cart button on main header. *** ");
 		CartLink.click();
-		log.info("Clicking on Cart button on main header.");
-
+		
 	}
 		
 }
