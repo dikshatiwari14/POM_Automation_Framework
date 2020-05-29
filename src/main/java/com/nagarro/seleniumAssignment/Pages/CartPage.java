@@ -23,14 +23,14 @@ public class CartPage extends Base {
 	public List<String> getDetailsOfProductInCart(){
 	List<String> cartProductTitle = new ArrayList<String>();
 	
-	//getting the title of product in cart to verify if product is same product is displayed in the cart
-	List<WebElement> products = CartProduct;
-	  log.info("Total Products in Cart are : " + products.size());
-	  test.log(Status.INFO, "Total Products in Cart are : " + products.size());
-	    for(WebElement ele:products)
+	//Getting the title of product in cart to verify if product is same product is displayed in the cart
+	
+	  log.info("Total Products in Cart are : " + CartProduct.size());
+	  test.log(Status.INFO, "Total Products in Cart are : " + CartProduct.size());
+	    for(WebElement product:CartProduct)
 	    {
-	        log.info( "Product title---"+ele.getText());
-	        cartProductTitle.add(ele.getText());
+	        log.info( "Product title---"+product.getText());
+	        cartProductTitle.add(product.getText());
 
 	    }
 	    log.info("List.size : "+cartProductTitle.toString());

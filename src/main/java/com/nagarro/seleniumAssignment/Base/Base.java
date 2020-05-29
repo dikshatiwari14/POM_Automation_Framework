@@ -28,19 +28,19 @@ public class Base {
 		String browser = PropertiesFileReader.getProperty("browser");
 		System.out.println("Browser Name is :" + browser);
 
-		if (browser.equals("chrome")) {
+		if (browser.equalsIgnoreCase("chrome") ){
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			log.info("Launching Chrome Browser");
 		}
 
-		else if (browser.equals("firefox")) {
+		else if (browser.equalsIgnoreCase("firefox") ){
 
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			log.info("Launching Firefox Browser");
 			
-		} else if (browser.equals("ie")) {
+		} else if (browser.equalsIgnoreCase("ie")) {
 
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
