@@ -1,16 +1,13 @@
 package com.nagarro.seleniumAssignment.Base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.nagarro.seleniumAssignment.Utilities.ConfigReader;
@@ -28,7 +25,7 @@ public class Base {
 	// To set up the browser
 	public WebDriver browserSetup() {
 		String browser = PropertiesFileReader.getProperty("browser");
-		System.out.println("Browser Name is :" + browser);
+		log.info("Browser Name is :" + browser);
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -60,7 +57,7 @@ public class Base {
 				.getProperty("implicitwait"));
 		driver.manage().timeouts()
 				.implicitlyWait(ImplicitWait, TimeUnit.SECONDS);
-		System.out.println(ImplicitWait);
+		log.info(ImplicitWait);
 		return driver;
 	}
 
@@ -69,7 +66,7 @@ public class Base {
 		driver.get(PropertiesFileReader.getProperty("url"));
 	}
 
-	@BeforeTest(groups = { "Regression", "Sanity" })
+	@BeforeClass(groups = { "Regression", "Sanity" })
 	public void initiate() {
 		browserSetup();
 		navigateToUrl();
@@ -77,7 +74,7 @@ public class Base {
 				+ " URL");
 	}
 
-	@AfterTest(groups = { "Regression", "Sanity" })
+	@AfterClass(groups = { "Regression", "Sanity" })
 	public void tearDown() {
 
 		if (driver != null) {
