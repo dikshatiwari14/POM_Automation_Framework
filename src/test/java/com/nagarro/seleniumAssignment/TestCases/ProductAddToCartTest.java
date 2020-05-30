@@ -65,6 +65,12 @@ public class ProductAddToCartTest extends Base {
 			// verifying if confirmation message is appearing
 			Assert.assertTrue(isConfirmationAppears,
 					"AddedToCartConfirmationNotAppeared");
+			
+			String confirmationMassage = addToCartConfirmation.getConfirmationMessage();
+			String ExpectedConfirmationMessage = xls.getCellData("TestData", 0, 7);
+
+			Assert.assertEquals(confirmationMassage, ExpectedConfirmationMessage,
+					"Incorrect Confirmation Text is displayed");		
 		} catch (Exception e) {
 			throw e;
 		}
