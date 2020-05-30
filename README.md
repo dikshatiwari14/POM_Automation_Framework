@@ -22,11 +22,7 @@ Failed Screenshots are maintained in FailedTestCaseScreenshots folder under Test
  Command to execute all test cases is:  mvn clean test -DsuiteXmlFile=testng.xml
  15. Execution with .bat file.
  *** Execution with AmazonAutomation.bat file***
- To execute the .bat file follow the below steps:
-1. Edit the AmazonAutomation.bat file with notepad.
-2.  Update the path of the testng.xml location Example: Your Directory Path\Automation
-3. Save the file.
-4. Double click on the file to execute.
+ To execute the .bat file follow the below steps double click on the file to execute.
  
  
  
