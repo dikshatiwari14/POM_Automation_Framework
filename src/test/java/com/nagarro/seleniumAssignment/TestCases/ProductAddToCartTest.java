@@ -15,7 +15,7 @@ import com.nagarro.seleniumAssignment.Pages.SearchResultsPage;
 import com.nagarro.seleniumAssignment.Utilities.DataUtil;
 
 public class ProductAddToCartTest extends Base {
-	
+
 	@Test(dataProvider = "getData", groups = { "Regression", "Sanity" })
 	public void verifyProductSelection(Hashtable<String, String> data)
 			throws Exception {
@@ -25,7 +25,8 @@ public class ProductAddToCartTest extends Base {
 		ProductPage productPage = new ProductPage();
 
 		try {
-			// Selecting the category and entering the search keyword from Data excel
+			// Selecting the category and entering the search keyword from Data
+			// excel
 			headerPage.searchProduct(data.get("Product_Category"),
 					data.get("Search_Text"));
 
@@ -38,13 +39,13 @@ public class ProductAddToCartTest extends Base {
 			searchResultsPage.switchToNewTab();
 			String ActualProductTitle = productPage.getOpenedProductTitle();
 
-			// Verifying if the same product is opened in new tab on the basis of title
+			// Verifying if the same product is opened in new tab on the basis
+			// of title
 			Assert.assertEquals(ActualProductTitle, ExpectedProductTitle,
 					"Different product is opened in new tab");
 		}
 
 		catch (Exception e) {
-
 			throw e;
 		}
 	}
@@ -63,8 +64,7 @@ public class ProductAddToCartTest extends Base {
 			// verifying if confirmation message is appearing
 			Assert.assertTrue(isConfirmationAppears,
 					"AddedToCartConfirmationNotAppeared");
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			throw e;
 		}
 	}

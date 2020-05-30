@@ -38,36 +38,33 @@ public class SearchResultsPage extends Base {
 		common.waitForElement(FirstProductLink);
 
 		// To get the title of First product on search results page
-		test.log(Status.INFO,
-				" *** getting the title of the first product on search results page *** ");
-		log.info(" *** getting the title of the first product on search results page *** ");
-
 		firstProductTitle = FirstProductLink.getText();
+		test.log(Status.INFO,
+				" Captured the title of the first product on search results page ");
+		log.info(" *** Captured the title of the first product on search results page *** ");
 		return firstProductTitle;
-
 	}
 
+	// To click on the First product on search results page
 	public void clickOnFirstProduct() {
 
-		// To click on the First product on search results page
-		test.log(Status.INFO,
-				" *** Clicking on the first product on search results page.*** ");
-		log.info(" *** Clicking on the first product on search results page.*** ");
-
 		FirstProductLink.click();
-
+		test.log(Status.INFO,
+				" Clicked on the first product on search results page ");
+		log.info(" Clicked on the first product on search results page*** ");
 	}
-	
-	//To switch the driver to new tab in which clicked product is opened
-	public void switchToNewTab(){
-		
+
+	// To switch the driver to new tab in which clicked product is opened
+	public void switchToNewTab() {
+
 		String parentWindow = driver.getWindowHandle();
-		
+
 		Set<String> allWindows = driver.getWindowHandles();
-		log.info("No of windows or tabs after clicking: " + allWindows.size());
-		 allWindows.remove(parentWindow);
-		 Iterator<String> ite = allWindows.iterator();
-		 driver.switchTo().window((String) ite.next());
-		 log.info(" *** Switching in new tab of browser.*** ");		 
+		log.info(" *** No of windows or tabs after clicking: "
+				+ allWindows.size() + "*** ");
+		allWindows.remove(parentWindow);
+		Iterator<String> ite = allWindows.iterator();
+		driver.switchTo().window((String) ite.next());
+		log.info(" *** Switched to new tab of browser.*** ");
 	}
 }

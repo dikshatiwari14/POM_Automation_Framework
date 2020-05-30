@@ -20,32 +20,34 @@ public class Base {
 
 	public static ConfigReader PropertiesFileReader = new ConfigReader();
 	public static WebDriver driver;
-	public ExcelReader xls = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\Data.xlsx");
+	public ExcelReader xls = new ExcelReader(System.getProperty("user.dir")
+			+ "\\src\\test\\resources\\TestData\\Data.xlsx");
 	public static Logger log = Logger.getLogger("devpinoyLogger");
-	public static ExtentTest  test;
+	public static ExtentTest test;
 
+	// To set up the browser
 	public WebDriver browserSetup() {
 		String browser = PropertiesFileReader.getProperty("browser");
 		System.out.println("Browser Name is :" + browser);
 
-		if (browser.equalsIgnoreCase("chrome") ){
+		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			log.info("Launching Chrome Browser");
 		}
 
-		else if (browser.equalsIgnoreCase("firefox") ){
+		else if (browser.equalsIgnoreCase("firefox")) {
 
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			log.info("Launching Firefox Browser");
-			
+
 		} else if (browser.equalsIgnoreCase("ie")) {
 
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 			log.info("Launching InternetExplorer Browser");
-			
+
 		} else {
 			System.err.println("Please Enter Correct Browser");
 		}
@@ -61,20 +63,21 @@ public class Base {
 		System.out.println(ImplicitWait);
 		return driver;
 	}
-	
-//To Navigate to application URL
+
+	// To Navigate to application URL
 	public void navigateToUrl() {
 		driver.get(PropertiesFileReader.getProperty("url"));
 	}
 
-	@BeforeTest (groups = {"Regression", "Sanity"})
+	@BeforeTest(groups = { "Regression", "Sanity" })
 	public void initiate() {
 		browserSetup();
 		navigateToUrl();
-		log.info("Navigating to " + PropertiesFileReader.getProperty("url")+ " URL");
+		log.info("Navigating to " + PropertiesFileReader.getProperty("url")
+				+ " URL");
 	}
 
-	@AfterTest (groups = {"Regression", "Sanity"})
+	@AfterTest(groups = { "Regression", "Sanity" })
 	public void tearDown() {
 
 		if (driver != null) {

@@ -26,31 +26,30 @@ public class HeaderPage extends Base {
 
 	@FindBy(xpath = AmazonConstants.CART_LINK)
 	WebElement CartLink;
-	
+
 	@FindBy(xpath = AmazonConstants.Account_And_Lists)
 	WebElement AccountAndLists;
-	
+
 	@FindBy(xpath = AmazonConstants.Your_Account)
 	WebElement YourAccount;
 
 	CommonFunctions common = new CommonFunctions();
 
 	// method to select any product category and product search keyword
-	
+
 	public void searchProduct(String category, String searchText) {
 
 		common.selectDropdown(SearchCategoryDropdown, category);
 		test.log(Status.INFO,
-				" *** Clicked on search category dropdown and selecting one category.*** ");
-		log.info(" *** Clicked on search category dropdown and selecting one category.***  ");
+				" Clicked on search category dropdown and selecting one category ");
+		log.info(" *** Clicked on search category dropdown and selecting one category *** ");
 
 		SearchTextField.sendKeys(searchText);
-		test.log(Status.INFO, " *** Entered the search keyword.*** ");
-		log.info(" *** Entered the search keyword.*** ");
+		test.log(Status.INFO, " Entered the search keyword ");
+		log.info(" *** Entered the search keyword*** ");
 
 		GoButton.click();
-		test.log(Status.INFO,
-				" *** Clicked on search button to perform search.*** ");
+		test.log(Status.INFO, " Clicked on search button to perform search ");
 		log.info(" *** Clicked on search button to perform search.*** ");
 	}
 
@@ -58,20 +57,18 @@ public class HeaderPage extends Base {
 	public void goToCartPage() {
 
 		CartLink.click();
-		test.log(Status.INFO,
-				" *** Clicked on Cart button on main header. *** ");
+		test.log(Status.INFO, " Clicked on Cart button on main header ");
 		log.info(" *** Clicked on Cart button on main header. *** ");
 	}
-	
+
 	// method to navigate to "Your Account" option from header
 	public void goToYourAccount() {
 
 		Actions actions = new Actions(driver);
 		actions.moveToElement(AccountAndLists).perform();
-	   common.waitForElement(YourAccount);
+		common.waitForElement(YourAccount);
 		YourAccount.click();
-		test.log(Status.INFO,
-				" *** Clicked on Your Account link *** ");
+		test.log(Status.INFO, " Clicked on Your Account link ");
 		log.info(" *** Clicked on Your Account link *** ");
 	}
 
