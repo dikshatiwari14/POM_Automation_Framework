@@ -1,6 +1,8 @@
 package com.nagarro.seleniumAssignment.Pages;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,8 +34,7 @@ public class SearchResultsPage extends Base {
 
 	public String getClickedProductTitle() {
 
-		// explicit wait - to wait for the products to be visible on search
-		// results page
+		// explicit wait - to wait for the products to be visible
 		common.waitForElement(FirstProductLink);
 
 		// To get the title of First product on search results page
@@ -55,5 +56,18 @@ public class SearchResultsPage extends Base {
 
 		FirstProductLink.click();
 
+	}
+	
+	//To switch the driver to new tab in which clicked product is opened
+	public void switchToNewTab(){
+		
+		String parentWindow = driver.getWindowHandle();
+		
+		Set<String> allWindows = driver.getWindowHandles();
+		log.info("No of windows or tabs after clicking: " + allWindows.size());
+		 allWindows.remove(parentWindow);
+		 Iterator<String> ite = allWindows.iterator();
+		 driver.switchTo().window((String) ite.next());
+		 log.info(" *** Switching in new tab of browser.*** ");		 
 	}
 }

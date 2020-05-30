@@ -14,7 +14,7 @@ public class AmazonConstants {
 	public static final String CONFIRMATION_TEXT = "//div[@id='huc-v2-order-row-confirm-text']";
 	public static final String CART_LINK = "//a[@id='nav-cart']";
 	public static final String Cart_ProductLink = "//span[@class='a-size-medium sc-product-title']";
-	
-	
+	public static final String Account_And_Lists ="//a[@id='nav-link-accountList']" ;
+	public static final String Your_Account = "//div[@id='nav-al-your-account']/a[1]";
 	
 }

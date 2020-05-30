@@ -5,8 +5,9 @@ import java.util.Hashtable;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.nagarro.seleniumAssignment.Base.Base;
-import com.nagarro.seleniumAssignment.Pages.AddToCartPage;
+import com.nagarro.seleniumAssignment.Pages.AddToCartConfirmationPage;
 import com.nagarro.seleniumAssignment.Pages.CartPage;
 import com.nagarro.seleniumAssignment.Pages.HeaderPage;
 import com.nagarro.seleniumAssignment.Pages.ProductPage;
@@ -34,7 +35,7 @@ public class ProductAddToCartTest extends Base {
 			// Clicking on first product on search results page
 			searchResultsPage.clickOnFirstProduct();
 
-			productPage.switchToNewTab();
+			searchResultsPage.switchToNewTab();
 			String ActualProductTitle = productPage.getOpenedProductTitle();
 
 			// Verifying if the same product is opened in new tab on the basis of title
@@ -50,12 +51,13 @@ public class ProductAddToCartTest extends Base {
 
 	@Test(dependsOnMethods = { "verifyProductSelection" }, groups = { "Regression" })
 	public void verifyProductAddedInCartConfirmationMessage() throws Exception {
-		AddToCartPage addToCart = new AddToCartPage();
+		AddToCartConfirmationPage addToCartConfirmation = new AddToCartConfirmationPage();
+		ProductPage productPage = new ProductPage();
 		try {
 			// Adding the product to cart
-			addToCart.addProductToCart();
+			productPage.addProductToCart();
 
-			Boolean isConfirmationAppears = addToCart
+			Boolean isConfirmationAppears = addToCartConfirmation
 					.isProductAddedInCartConfirmationAppears();
 
 			// verifying if confirmation message is appearing

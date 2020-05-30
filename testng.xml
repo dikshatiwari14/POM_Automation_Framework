@@ -13,6 +13,8 @@
 		<classes>
 			<class
 				name="com.nagarro.seleniumAssignment.TestCases.ProductAddToCartTest" />
+				<class
+				name="com.nagarro.seleniumAssignment.TestCases.YourAccountPageTitleTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
