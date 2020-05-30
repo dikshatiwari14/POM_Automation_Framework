@@ -61,7 +61,8 @@ public class Base {
 		System.out.println(ImplicitWait);
 		return driver;
 	}
-
+	
+//To Navigate to application URL
 	public void navigateToUrl() {
 		driver.get(PropertiesFileReader.getProperty("url"));
 	}

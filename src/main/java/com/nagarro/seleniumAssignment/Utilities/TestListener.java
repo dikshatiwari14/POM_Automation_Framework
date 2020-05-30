@@ -31,13 +31,13 @@ public class TestListener implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		Base.test.log(Status.PASS, "Test Case passed" + result.getName());
+		Base.test.log(Status.PASS, " Test Case passed ---" + result.getName());
 		Base.log.info("*** Executed " + result.getName() + " Test Case Successfully ***");
 		
 	}
 
 	public void onTestFailure(ITestResult result) {
-		Base.test.log(Status.FAIL, "TestCase failed IS" + result.getName());
+		Base.test.log(Status.FAIL, " TestCase failed --- " + result.getName());
 		Base.log.info("*** Executed " + result.getName() + " Test Case Failed ***");
 
 		try {

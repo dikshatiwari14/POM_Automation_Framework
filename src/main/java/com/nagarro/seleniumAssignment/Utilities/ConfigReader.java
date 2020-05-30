@@ -32,7 +32,6 @@ public class ConfigReader {
 	}
 
 	public String getProperty(String key) {
-		// TODO Auto-generated method stub
 		return prop.getProperty(key);
 	}
 	
