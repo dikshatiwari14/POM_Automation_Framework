@@ -18,9 +18,11 @@ Failed Screenshots are maintained in FailedTestCaseScreenshots folder under Test
 12. DataUtil under utilities  is used for Excel reading functions.
 13. CommonFunctions.java under Common package is used for generic functions.
 14. Project can be executed from cmd as well using maven plugins.
+
 *** Execution from cmd***
  Command to execute all test cases is:  mvn clean test -DsuiteXmlFile=testng.xml
  15. Execution with .bat file.
+ 
  *** Execution with AmazonAutomation.bat file***
  To execute the .bat file follow the below steps double click on the file to execute.
  
