@@ -1,5 +1,6 @@
 package com.nagarro.seleniumAssignment.TestCases;
 
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 
 import org.testng.Assert;
@@ -89,7 +90,7 @@ public class ProductAddToCartTest extends Base {
 	}
 
 	@DataProvider
-	public Object[][] getData() {
-		return DataUtil.getData(xls, "verifyProductSelection");
+	public Object[][] getData(Method m) {
+		return DataUtil.getData(xls, m.getName());
 	}
 }
