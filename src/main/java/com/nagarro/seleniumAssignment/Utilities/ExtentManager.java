@@ -40,7 +40,7 @@ public class ExtentManager {
 		extent.setSystemInfo("OS", "Windows");
 		extent.setSystemInfo("Environment", "Test");
 		extent.setSystemInfo("User Name", "Diksha Tiwari");
-		extent.setSystemInfo("Browser", Base.PropertiesFileReader.getProperty("browser"));
+		extent.setSystemInfo("Browser", Base.propertiesFileReader.getProperty("browser"));
  
         return extent;
     }

@@ -15,7 +15,7 @@ import com.nagarro.seleniumAssignment.Utilities.ExcelReader;
 
 public class Base {
 
-	public static ConfigReader PropertiesFileReader = new ConfigReader();
+	public static ConfigReader propertiesFileReader = new ConfigReader();
 	public static WebDriver driver;
 	public ExcelReader xls = new ExcelReader(System.getProperty("user.dir")
 			+ "\\src\\test\\resources\\TestData\\Data.xlsx");
@@ -24,7 +24,7 @@ public class Base {
 
 	// To set up the browser
 	public WebDriver browserSetup() {
-		String browser = PropertiesFileReader.getProperty("browser");
+		String browser = propertiesFileReader.getProperty("browser");
 		log.info("Browser Name is :" + browser);
 
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -53,7 +53,7 @@ public class Base {
 		driver.manage().window().maximize();
 
 		// Applying Implicit Wait
-		int ImplicitWait = Integer.parseInt(PropertiesFileReader
+		int ImplicitWait = Integer.parseInt(propertiesFileReader
 				.getProperty("implicitwait"));
 		driver.manage().timeouts()
 				.implicitlyWait(ImplicitWait, TimeUnit.SECONDS);
@@ -63,14 +63,14 @@ public class Base {
 
 	// To Navigate to application URL
 	public void navigateToUrl() {
-		driver.get(PropertiesFileReader.getProperty("url"));
+		driver.get(propertiesFileReader.getProperty("url"));
 	}
 
 	@BeforeClass(groups = { "Regression", "Sanity" })
 	public void initiate() {
 		browserSetup();
 		navigateToUrl();
-		log.info("Navigating to " + PropertiesFileReader.getProperty("url")
+		log.info("Navigating to " + propertiesFileReader.getProperty("url")
 				+ " URL");
 	}
 
