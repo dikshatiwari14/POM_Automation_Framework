@@ -1,4 +1,4 @@
-set projectLocation=D:\Git\AmazonAutomation\Automation
+set projectLocation=\Automation
 
 cd %projectLocation%
 
