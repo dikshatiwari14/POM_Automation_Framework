@@ -21,8 +21,8 @@ Failed Screenshots are maintained in FailedTestCaseScreenshots folder under Test
 
 # Execution from cmd
  Command to execute all test cases is:  mvn clean test -DsuiteXmlFile=testng.xml
- 15. Execution with .bat file.
  
+ 15. Execution with .bat file.
  # Execution with AmazonAutomation.bat file
  To execute the .bat file follow the below steps double click on the file to execute.
  
