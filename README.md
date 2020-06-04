@@ -9,7 +9,7 @@ Features included in Amazon POM Automation Framework:
 verifyYourAccountsPageTitle() is failing intentionally in YourAccountPageTitleTest.java 
 5. Test Data is read from Data excel file under: src/test/resources/TestData/Data.xlsx
 6. Application URL, Browser and global implicit wait is read from config.poperties file located under: src/main/resources
-7.Logging: Log4j is used for logging.
+7. Logging: Log4j is used for logging.
 8. Log4j Logs: Log4j logs are maintained under Log4jLogs folder and it is maintaining both system and manual logs.
 9. Extent Report: Extent Reports and screenshots are maintained in TestReport_Extent folder.
 Failed Screenshots are maintained in FailedTestCaseScreenshots folder under TestReport_Extent folder.
@@ -18,7 +18,6 @@ Failed Screenshots are maintained in FailedTestCaseScreenshots folder under Test
 12. DataUtil under utilities  is used for Excel reading functions.
 13. CommonFunctions.java under Common package is used for generic functions.
 14. Project can be executed from cmd as well using maven plugins.
-
 # Execution from cmd
  Command to execute all test cases is:  mvn clean test -DsuiteXmlFile=testng.xml
  
