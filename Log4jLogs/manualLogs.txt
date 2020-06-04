@@ -1,0 +1,40 @@
+04/06/2020 17:49:18 devpinoyLogger  Test Suite --- AmazonAutomationTest started ...
+04/06/2020 17:49:18 devpinoyLogger Browser Name is :chrome
+04/06/2020 17:49:21 devpinoyLogger Launching Chrome Browser
+04/06/2020 17:49:24 devpinoyLogger 10
+04/06/2020 17:49:29 devpinoyLogger Navigating to https://www.amazon.in/ URL
+04/06/2020 17:49:29 devpinoyLogger verifyProductSelection
+04/06/2020 17:49:29 devpinoyLogger Test starts from row - 1
+04/06/2020 17:49:29 devpinoyLogger Total rows are  - 1
+04/06/2020 17:49:29 devpinoyLogger Total cols are  - 2
+04/06/2020 17:49:29 devpinoyLogger *** Running test method verifyProductSelection...
+04/06/2020 17:49:30 devpinoyLogger  *** Clicked on search category dropdown and selecting one category *** 
+04/06/2020 17:49:30 devpinoyLogger  *** Entered the search keyword*** 
+04/06/2020 17:49:30 devpinoyLogger  *** Clicked on search button to perform search.*** 
+04/06/2020 17:49:31 devpinoyLogger  *** Captured the title of the first product on search results page *** 
+04/06/2020 17:49:32 devpinoyLogger  Clicked on the first product on search results page*** 
+04/06/2020 17:49:32 devpinoyLogger  *** No of windows or tabs after clicking: 2*** 
+04/06/2020 17:49:32 devpinoyLogger  *** Switched to new tab of browser.*** 
+04/06/2020 17:49:35 devpinoyLogger  *** Captured the title of the clicked product on Product page *** 
+04/06/2020 17:49:35 devpinoyLogger *** Executed verifyProductSelection Test Case Successfully ***
+04/06/2020 17:49:35 devpinoyLogger *** Running test method verifyProductAddedInCartConfirmationMessage...
+04/06/2020 17:49:39 devpinoyLogger  *** Clicked on Add to Cart button *** 
+04/06/2020 17:49:39 devpinoyLogger  *** Verify if the confirmation text for added to cart is shown *** 
+04/06/2020 17:49:39 devpinoyLogger  *** Captured confirmation message text *** 
+04/06/2020 17:49:39 devpinoyLogger *** Executed verifyProductAddedInCartConfirmationMessage Test Case Successfully ***
+04/06/2020 17:49:39 devpinoyLogger *** Running test method verifyTheProductInCart...
+04/06/2020 17:49:43 devpinoyLogger  *** Clicked on Cart button on main header. *** 
+04/06/2020 17:49:43 devpinoyLogger  *** Total Products in Cart are : 1*** 
+04/06/2020 17:49:43 devpinoyLogger  *** Product title---Geo-Fresh organic Selenat Tablet (500mg)-90 Tab (Natural selenium supplement)***
+04/06/2020 17:49:43 devpinoyLogger  *** List.size : [Geo-Fresh organic Selenat Tablet (500mg)-90 Tab (Natural selenium supplement)]*** 
+04/06/2020 17:49:43 devpinoyLogger *** Executed verifyTheProductInCart Test Case Successfully ***
+04/06/2020 17:49:43 devpinoyLogger Closing Browser
+04/06/2020 17:49:43 devpinoyLogger Browser Name is :chrome
+04/06/2020 17:49:47 devpinoyLogger Launching Chrome Browser
+04/06/2020 17:49:49 devpinoyLogger 10
+04/06/2020 17:49:54 devpinoyLogger Navigating to https://www.amazon.in/ URL
+04/06/2020 17:49:54 devpinoyLogger *** Running test method verifyYourAccountsPageTitle...
+04/06/2020 17:49:55 devpinoyLogger  *** Clicked on Your Account link *** 
+04/06/2020 17:49:55 devpinoyLogger *** Executed verifyYourAccountsPageTitle Test Case Failed ***
+04/06/2020 17:49:56 devpinoyLogger Closing Browser
+04/06/2020 17:49:56 devpinoyLogger  Test Suite --- AmazonAutomationTest ending...

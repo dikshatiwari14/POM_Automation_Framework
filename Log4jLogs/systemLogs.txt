@@ -1,0 +1,40 @@
+17:49:18,023  INFO devpinoyLogger<strong>{1}</strong>:17 -  Test Suite --- AmazonAutomationTest started ...
+17:49:18,135  INFO devpinoyLogger<strong>{1}</strong>:28 - Browser Name is :chrome
+17:49:21,948  INFO devpinoyLogger<strong>{1}</strong>:33 - Launching Chrome Browser
+17:49:24,080  INFO devpinoyLogger<strong>{1}</strong>:60 - 10
+17:49:29,562  INFO devpinoyLogger<strong>{1}</strong>:73 - Navigating to https://www.amazon.in/ URL
+17:49:29,578 DEBUG devpinoyLogger<strong>{1}</strong>:13 - verifyProductSelection
+17:49:29,578 DEBUG devpinoyLogger<strong>{1}</strong>:17 - Test starts from row - 1
+17:49:29,579 DEBUG devpinoyLogger<strong>{1}</strong>:26 - Total rows are  - 1
+17:49:29,579 DEBUG devpinoyLogger<strong>{1}</strong>:33 - Total cols are  - 2
+17:49:29,609  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyProductSelection...
+17:49:30,194  INFO devpinoyLogger<strong>{1}</strong>:45 -  *** Clicked on search category dropdown and selecting one category *** 
+17:49:30,405  INFO devpinoyLogger<strong>{1}</strong>:49 -  *** Entered the search keyword*** 
+17:49:30,592  INFO devpinoyLogger<strong>{1}</strong>:53 -  *** Clicked on search button to perform search.*** 
+17:49:31,594  INFO devpinoyLogger<strong>{1}</strong>:44 -  *** Captured the title of the first product on search results page *** 
+17:49:32,207  INFO devpinoyLogger<strong>{1}</strong>:54 -  Clicked on the first product on search results page*** 
+17:49:32,220  INFO devpinoyLogger<strong>{1}</strong>:63 -  *** No of windows or tabs after clicking: 2*** 
+17:49:32,244  INFO devpinoyLogger<strong>{1}</strong>:68 -  *** Switched to new tab of browser.*** 
+17:49:35,724  INFO devpinoyLogger<strong>{1}</strong>:40 -  *** Captured the title of the clicked product on Product page *** 
+17:49:35,733  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyProductSelection Test Case Successfully ***
+17:49:35,738  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyProductAddedInCartConfirmationMessage...
+17:49:39,897  INFO devpinoyLogger<strong>{1}</strong>:54 -  *** Clicked on Add to Cart button *** 
+17:49:39,967  INFO devpinoyLogger<strong>{1}</strong>:31 -  *** Verify if the confirmation text for added to cart is shown *** 
+17:49:39,997  INFO devpinoyLogger<strong>{1}</strong>:39 -  *** Captured confirmation message text *** 
+17:49:39,998  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyProductAddedInCartConfirmationMessage Test Case Successfully ***
+17:49:39,999  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyTheProductInCart...
+17:49:43,138  INFO devpinoyLogger<strong>{1}</strong>:61 -  *** Clicked on Cart button on main header. *** 
+17:49:43,172  INFO devpinoyLogger<strong>{1}</strong>:26 -  *** Total Products in Cart are : 1*** 
+17:49:43,208  INFO devpinoyLogger<strong>{1}</strong>:33 -  *** Product title---Geo-Fresh organic Selenat Tablet (500mg)-90 Tab (Natural selenium supplement)***
+17:49:43,218  INFO devpinoyLogger<strong>{1}</strong>:36 -  *** List.size : [Geo-Fresh organic Selenat Tablet (500mg)-90 Tab (Natural selenium supplement)]*** 
+17:49:43,219  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyTheProductInCart Test Case Successfully ***
+17:49:43,911  INFO devpinoyLogger<strong>{1}</strong>:82 - Closing Browser
+17:49:43,912  INFO devpinoyLogger<strong>{1}</strong>:28 - Browser Name is :chrome
+17:49:47,080  INFO devpinoyLogger<strong>{1}</strong>:33 - Launching Chrome Browser
+17:49:49,208  INFO devpinoyLogger<strong>{1}</strong>:60 - 10
+17:49:54,398  INFO devpinoyLogger<strong>{1}</strong>:73 - Navigating to https://www.amazon.in/ URL
+17:49:54,399  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyYourAccountsPageTitle...
+17:49:55,280  INFO devpinoyLogger<strong>{1}</strong>:72 -  *** Clicked on Your Account link *** 
+17:49:55,293  INFO devpinoyLogger<strong>{1}</strong>:41 - *** Executed verifyYourAccountsPageTitle Test Case Failed ***
+17:49:56,814  INFO devpinoyLogger<strong>{1}</strong>:82 - Closing Browser
+17:49:56,855  INFO devpinoyLogger<strong>{1}</strong>:23 -  Test Suite --- AmazonAutomationTest ending...
