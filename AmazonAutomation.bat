@@ -1,4 +1,4 @@
-set projectLocation=\Automation
+set projectLocation=\POM_Automation_Framework
 
 cd %projectLocation%
 
