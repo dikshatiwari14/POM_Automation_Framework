@@ -14,14 +14,16 @@ pipeline
                 checkout scm
             }
         }
-               stage('build && SonarQube analysis') {
-            steps {
-                withSonarQubeEnv("local sonar") {
+         stage('build && SonarQube analysis') 
+        {
+            steps 
+            {
+                withSonarQubeEnv("local sonar")
+                {
                         bat 'mvn clean package sonar:sonar'
-                    }
                 }
-            }
-        }
+             }
+         }
         
     }
 }
