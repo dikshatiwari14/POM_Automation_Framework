@@ -15,6 +15,6 @@ public class AmazonConstants {
 	public static final String CART_LINK = "//a[@id='nav-cart']";
 	public static final String Cart_ProductLink = "//span[@class ='a-size-medium sc-product-title a-text-bold']";
 	public static final String Account_And_Lists ="//a[@id='nav-link-accountList']" ;
-	public static final String Your_Account = "//div[@id='nav-al-your-account']/a[1]";
+	public static final String Your_Account = "//a[@href='/gp/css/homepage.html?ref_=nav_AccountFlyout_ya']";
 	
 }

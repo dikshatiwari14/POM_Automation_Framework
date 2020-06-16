@@ -1,40 +1,40 @@
-15:18:44,838  INFO devpinoyLogger<strong>{1}</strong>:17 -  Test Suite --- AmazonAutomationTest started ...
-15:18:44,931  INFO devpinoyLogger<strong>{1}</strong>:28 - Browser Name is :chrome
-15:18:48,605  INFO devpinoyLogger<strong>{1}</strong>:33 - Launching Chrome Browser
-15:18:50,736  INFO devpinoyLogger<strong>{1}</strong>:60 - 10
-15:18:56,121  INFO devpinoyLogger<strong>{1}</strong>:73 - Navigating to https://www.amazon.in/ URL
-15:18:56,133 DEBUG devpinoyLogger<strong>{1}</strong>:13 - verifyProductSelection
-15:18:56,133 DEBUG devpinoyLogger<strong>{1}</strong>:17 - Test starts from row - 1
-15:18:56,134 DEBUG devpinoyLogger<strong>{1}</strong>:26 - Total rows are  - 1
-15:18:56,134 DEBUG devpinoyLogger<strong>{1}</strong>:33 - Total cols are  - 2
-15:18:56,154  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyProductSelection...
-15:18:56,478  INFO devpinoyLogger<strong>{1}</strong>:45 -  *** Clicked on search category dropdown and selecting one category *** 
-15:18:56,714  INFO devpinoyLogger<strong>{1}</strong>:49 -  *** Entered the search keyword*** 
-15:19:00,410  INFO devpinoyLogger<strong>{1}</strong>:53 -  *** Clicked on search button to perform search.*** 
-15:19:00,499  INFO devpinoyLogger<strong>{1}</strong>:44 -  *** Captured the title of the first product on search results page *** 
-15:19:00,730  INFO devpinoyLogger<strong>{1}</strong>:54 -  Clicked on the first product on search results page*** 
-15:19:00,735  INFO devpinoyLogger<strong>{1}</strong>:63 -  *** No of windows or tabs after clicking: 2*** 
-15:19:00,743  INFO devpinoyLogger<strong>{1}</strong>:68 -  *** Switched to new tab of browser.*** 
-15:19:08,162  INFO devpinoyLogger<strong>{1}</strong>:40 -  *** Captured the title of the clicked product on Product page *** 
-15:19:08,165  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyProductSelection Test Case Successfully ***
-15:19:08,168  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyProductAddedInCartConfirmationMessage...
-15:19:08,440  INFO devpinoyLogger<strong>{1}</strong>:54 -  *** Clicked on Add to Cart button *** 
-15:19:10,483  INFO devpinoyLogger<strong>{1}</strong>:31 -  *** Verify if the confirmation text for added to cart is shown *** 
-15:19:10,506  INFO devpinoyLogger<strong>{1}</strong>:39 -  *** Captured confirmation message text *** 
-15:19:10,507  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyProductAddedInCartConfirmationMessage Test Case Successfully ***
-15:19:10,508  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyTheProductInCart...
-15:19:10,974  INFO devpinoyLogger<strong>{1}</strong>:61 -  *** Clicked on Cart button on main header. *** 
-15:19:11,548  INFO devpinoyLogger<strong>{1}</strong>:26 -  *** Total Products in Cart are : 1*** 
-15:19:11,578  INFO devpinoyLogger<strong>{1}</strong>:33 -  *** Product title---Core Python Programming***
-15:19:11,585  INFO devpinoyLogger<strong>{1}</strong>:36 -  *** List.size : [Core Python Programming]*** 
-15:19:11,586  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyTheProductInCart Test Case Successfully ***
-15:19:12,224  INFO devpinoyLogger<strong>{1}</strong>:82 - Closing Browser
-15:19:12,226  INFO devpinoyLogger<strong>{1}</strong>:28 - Browser Name is :chrome
-15:19:15,288  INFO devpinoyLogger<strong>{1}</strong>:33 - Launching Chrome Browser
-15:19:17,418  INFO devpinoyLogger<strong>{1}</strong>:60 - 10
-15:19:21,693  INFO devpinoyLogger<strong>{1}</strong>:73 - Navigating to https://www.amazon.in/ URL
-15:19:21,693  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyYourAccountsPageTitle...
-15:19:22,263  INFO devpinoyLogger<strong>{1}</strong>:72 -  *** Clicked on Your Account link *** 
-15:19:22,277  INFO devpinoyLogger<strong>{1}</strong>:41 - *** Executed verifyYourAccountsPageTitle Test Case Failed ***
-15:19:23,533  INFO devpinoyLogger<strong>{1}</strong>:82 - Closing Browser
-15:19:23,554  INFO devpinoyLogger<strong>{1}</strong>:23 -  Test Suite --- AmazonAutomationTest ending...
+16:49:31,028  INFO devpinoyLogger<strong>{1}</strong>:17 -  Test Suite --- AmazonAutomationTest started ...
+16:49:31,120  INFO devpinoyLogger<strong>{1}</strong>:28 - Browser Name is :chrome
+16:49:34,696  INFO devpinoyLogger<strong>{1}</strong>:33 - Launching Chrome Browser
+16:49:36,822  INFO devpinoyLogger<strong>{1}</strong>:60 - 10
+16:49:38,716  INFO devpinoyLogger<strong>{1}</strong>:73 - Navigating to https://www.amazon.in/ URL
+16:49:38,724 DEBUG devpinoyLogger<strong>{1}</strong>:13 - verifyProductSelection
+16:49:38,724 DEBUG devpinoyLogger<strong>{1}</strong>:17 - Test starts from row - 1
+16:49:38,724 DEBUG devpinoyLogger<strong>{1}</strong>:26 - Total rows are  - 1
+16:49:38,724 DEBUG devpinoyLogger<strong>{1}</strong>:33 - Total cols are  - 2
+16:49:38,747  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyProductSelection...
+16:49:39,233  INFO devpinoyLogger<strong>{1}</strong>:45 -  *** Clicked on search category dropdown and selecting one category *** 
+16:49:39,332  INFO devpinoyLogger<strong>{1}</strong>:49 -  *** Entered the search keyword*** 
+16:49:41,136  INFO devpinoyLogger<strong>{1}</strong>:53 -  *** Clicked on search button to perform search.*** 
+16:49:41,304  INFO devpinoyLogger<strong>{1}</strong>:44 -  *** Captured the title of the first product on search results page *** 
+16:49:41,513  INFO devpinoyLogger<strong>{1}</strong>:54 -  Clicked on the first product on search results page*** 
+16:49:41,519  INFO devpinoyLogger<strong>{1}</strong>:63 -  *** No of windows or tabs after clicking: 2*** 
+16:49:41,528  INFO devpinoyLogger<strong>{1}</strong>:68 -  *** Switched to new tab of browser.*** 
+16:49:44,388  INFO devpinoyLogger<strong>{1}</strong>:40 -  *** Captured the title of the clicked product on Product page *** 
+16:49:44,392  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyProductSelection Test Case Successfully ***
+16:49:44,396  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyProductAddedInCartConfirmationMessage...
+16:49:45,932  INFO devpinoyLogger<strong>{1}</strong>:54 -  *** Clicked on Add to Cart button *** 
+16:49:46,015  INFO devpinoyLogger<strong>{1}</strong>:31 -  *** Verify if the confirmation text for added to cart is shown *** 
+16:49:46,036  INFO devpinoyLogger<strong>{1}</strong>:39 -  *** Captured confirmation message text *** 
+16:49:46,038  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyProductAddedInCartConfirmationMessage Test Case Successfully ***
+16:49:46,040  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyTheProductInCart...
+16:49:47,831  INFO devpinoyLogger<strong>{1}</strong>:61 -  *** Clicked on Cart button on main header. *** 
+16:49:47,888  INFO devpinoyLogger<strong>{1}</strong>:26 -  *** Total Products in Cart are : 1*** 
+16:49:47,954  INFO devpinoyLogger<strong>{1}</strong>:33 -  *** Product title---Core Python Programming***
+16:49:47,962  INFO devpinoyLogger<strong>{1}</strong>:36 -  *** List.size : [Core Python Programming]*** 
+16:49:47,963  INFO devpinoyLogger<strong>{1}</strong>:35 - *** Executed verifyTheProductInCart Test Case Successfully ***
+16:49:48,626  INFO devpinoyLogger<strong>{1}</strong>:82 - Closing Browser
+16:49:48,626  INFO devpinoyLogger<strong>{1}</strong>:28 - Browser Name is :chrome
+16:49:51,706  INFO devpinoyLogger<strong>{1}</strong>:33 - Launching Chrome Browser
+16:49:53,829  INFO devpinoyLogger<strong>{1}</strong>:60 - 10
+16:49:55,425  INFO devpinoyLogger<strong>{1}</strong>:73 - Navigating to https://www.amazon.in/ URL
+16:49:55,426  INFO devpinoyLogger<strong>{1}</strong>:30 - *** Running test method verifyYourAccountsPageTitle...
+16:49:56,566  INFO devpinoyLogger<strong>{1}</strong>:72 -  *** Clicked on Your Account link *** 
+16:49:56,633  INFO devpinoyLogger<strong>{1}</strong>:41 - *** Executed verifyYourAccountsPageTitle Test Case Failed ***
+16:49:57,756  INFO devpinoyLogger<strong>{1}</strong>:82 - Closing Browser
+16:49:57,771  INFO devpinoyLogger<strong>{1}</strong>:23 -  Test Suite --- AmazonAutomationTest ending...

@@ -1,40 +1,40 @@
-05/06/2020 15:18:44 devpinoyLogger  Test Suite --- AmazonAutomationTest started ...
-05/06/2020 15:18:44 devpinoyLogger Browser Name is :chrome
-05/06/2020 15:18:48 devpinoyLogger Launching Chrome Browser
-05/06/2020 15:18:50 devpinoyLogger 10
-05/06/2020 15:18:56 devpinoyLogger Navigating to https://www.amazon.in/ URL
-05/06/2020 15:18:56 devpinoyLogger verifyProductSelection
-05/06/2020 15:18:56 devpinoyLogger Test starts from row - 1
-05/06/2020 15:18:56 devpinoyLogger Total rows are  - 1
-05/06/2020 15:18:56 devpinoyLogger Total cols are  - 2
-05/06/2020 15:18:56 devpinoyLogger *** Running test method verifyProductSelection...
-05/06/2020 15:18:56 devpinoyLogger  *** Clicked on search category dropdown and selecting one category *** 
-05/06/2020 15:18:56 devpinoyLogger  *** Entered the search keyword*** 
-05/06/2020 15:19:00 devpinoyLogger  *** Clicked on search button to perform search.*** 
-05/06/2020 15:19:00 devpinoyLogger  *** Captured the title of the first product on search results page *** 
-05/06/2020 15:19:00 devpinoyLogger  Clicked on the first product on search results page*** 
-05/06/2020 15:19:00 devpinoyLogger  *** No of windows or tabs after clicking: 2*** 
-05/06/2020 15:19:00 devpinoyLogger  *** Switched to new tab of browser.*** 
-05/06/2020 15:19:08 devpinoyLogger  *** Captured the title of the clicked product on Product page *** 
-05/06/2020 15:19:08 devpinoyLogger *** Executed verifyProductSelection Test Case Successfully ***
-05/06/2020 15:19:08 devpinoyLogger *** Running test method verifyProductAddedInCartConfirmationMessage...
-05/06/2020 15:19:08 devpinoyLogger  *** Clicked on Add to Cart button *** 
-05/06/2020 15:19:10 devpinoyLogger  *** Verify if the confirmation text for added to cart is shown *** 
-05/06/2020 15:19:10 devpinoyLogger  *** Captured confirmation message text *** 
-05/06/2020 15:19:10 devpinoyLogger *** Executed verifyProductAddedInCartConfirmationMessage Test Case Successfully ***
-05/06/2020 15:19:10 devpinoyLogger *** Running test method verifyTheProductInCart...
-05/06/2020 15:19:10 devpinoyLogger  *** Clicked on Cart button on main header. *** 
-05/06/2020 15:19:11 devpinoyLogger  *** Total Products in Cart are : 1*** 
-05/06/2020 15:19:11 devpinoyLogger  *** Product title---Core Python Programming***
-05/06/2020 15:19:11 devpinoyLogger  *** List.size : [Core Python Programming]*** 
-05/06/2020 15:19:11 devpinoyLogger *** Executed verifyTheProductInCart Test Case Successfully ***
-05/06/2020 15:19:12 devpinoyLogger Closing Browser
-05/06/2020 15:19:12 devpinoyLogger Browser Name is :chrome
-05/06/2020 15:19:15 devpinoyLogger Launching Chrome Browser
-05/06/2020 15:19:17 devpinoyLogger 10
-05/06/2020 15:19:21 devpinoyLogger Navigating to https://www.amazon.in/ URL
-05/06/2020 15:19:21 devpinoyLogger *** Running test method verifyYourAccountsPageTitle...
-05/06/2020 15:19:22 devpinoyLogger  *** Clicked on Your Account link *** 
-05/06/2020 15:19:22 devpinoyLogger *** Executed verifyYourAccountsPageTitle Test Case Failed ***
-05/06/2020 15:19:23 devpinoyLogger Closing Browser
-05/06/2020 15:19:23 devpinoyLogger  Test Suite --- AmazonAutomationTest ending...
+16/06/2020 16:49:31 devpinoyLogger  Test Suite --- AmazonAutomationTest started ...
+16/06/2020 16:49:31 devpinoyLogger Browser Name is :chrome
+16/06/2020 16:49:34 devpinoyLogger Launching Chrome Browser
+16/06/2020 16:49:36 devpinoyLogger 10
+16/06/2020 16:49:38 devpinoyLogger Navigating to https://www.amazon.in/ URL
+16/06/2020 16:49:38 devpinoyLogger verifyProductSelection
+16/06/2020 16:49:38 devpinoyLogger Test starts from row - 1
+16/06/2020 16:49:38 devpinoyLogger Total rows are  - 1
+16/06/2020 16:49:38 devpinoyLogger Total cols are  - 2
+16/06/2020 16:49:38 devpinoyLogger *** Running test method verifyProductSelection...
+16/06/2020 16:49:39 devpinoyLogger  *** Clicked on search category dropdown and selecting one category *** 
+16/06/2020 16:49:39 devpinoyLogger  *** Entered the search keyword*** 
+16/06/2020 16:49:41 devpinoyLogger  *** Clicked on search button to perform search.*** 
+16/06/2020 16:49:41 devpinoyLogger  *** Captured the title of the first product on search results page *** 
+16/06/2020 16:49:41 devpinoyLogger  Clicked on the first product on search results page*** 
+16/06/2020 16:49:41 devpinoyLogger  *** No of windows or tabs after clicking: 2*** 
+16/06/2020 16:49:41 devpinoyLogger  *** Switched to new tab of browser.*** 
+16/06/2020 16:49:44 devpinoyLogger  *** Captured the title of the clicked product on Product page *** 
+16/06/2020 16:49:44 devpinoyLogger *** Executed verifyProductSelection Test Case Successfully ***
+16/06/2020 16:49:44 devpinoyLogger *** Running test method verifyProductAddedInCartConfirmationMessage...
+16/06/2020 16:49:45 devpinoyLogger  *** Clicked on Add to Cart button *** 
+16/06/2020 16:49:46 devpinoyLogger  *** Verify if the confirmation text for added to cart is shown *** 
+16/06/2020 16:49:46 devpinoyLogger  *** Captured confirmation message text *** 
+16/06/2020 16:49:46 devpinoyLogger *** Executed verifyProductAddedInCartConfirmationMessage Test Case Successfully ***
+16/06/2020 16:49:46 devpinoyLogger *** Running test method verifyTheProductInCart...
+16/06/2020 16:49:47 devpinoyLogger  *** Clicked on Cart button on main header. *** 
+16/06/2020 16:49:47 devpinoyLogger  *** Total Products in Cart are : 1*** 
+16/06/2020 16:49:47 devpinoyLogger  *** Product title---Core Python Programming***
+16/06/2020 16:49:47 devpinoyLogger  *** List.size : [Core Python Programming]*** 
+16/06/2020 16:49:47 devpinoyLogger *** Executed verifyTheProductInCart Test Case Successfully ***
+16/06/2020 16:49:48 devpinoyLogger Closing Browser
+16/06/2020 16:49:48 devpinoyLogger Browser Name is :chrome
+16/06/2020 16:49:51 devpinoyLogger Launching Chrome Browser
+16/06/2020 16:49:53 devpinoyLogger 10
+16/06/2020 16:49:55 devpinoyLogger Navigating to https://www.amazon.in/ URL
+16/06/2020 16:49:55 devpinoyLogger *** Running test method verifyYourAccountsPageTitle...
+16/06/2020 16:49:56 devpinoyLogger  *** Clicked on Your Account link *** 
+16/06/2020 16:49:56 devpinoyLogger *** Executed verifyYourAccountsPageTitle Test Case Failed ***
+16/06/2020 16:49:57 devpinoyLogger Closing Browser
+16/06/2020 16:49:57 devpinoyLogger  Test Suite --- AmazonAutomationTest ending...
