@@ -14,16 +14,24 @@ pipeline
                 checkout scm
             }
         }
-         stage('build && SonarQube analysis') 
+        stage('build')
         {
-            steps 
+            steps
             {
+                bat "mvn clean install"
+            }
+        }
+        stage('Sonar Analysis')
+        {
+            steps
+            {
+                echo "Sonar"
                 withSonarQubeEnv("local sonar")
                 {
-                        bat 'mvn clean package sonar:sonar'
+                 bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:2.11:sonar"
                 }
-             }
-         }
+            }
+        }
         
     }
 }
