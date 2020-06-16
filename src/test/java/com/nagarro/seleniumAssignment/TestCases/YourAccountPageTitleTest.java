@@ -17,7 +17,7 @@ public class YourAccountPageTitleTest extends Base{
 		//Applying assertion to fail this test case
 		Assert.assertTrue(
 				PageTitle.contains(
-						"Profile"),
+						"Account"),
 				"Title is different");
 		
 	}
